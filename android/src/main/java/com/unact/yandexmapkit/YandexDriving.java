@@ -56,7 +56,7 @@ public class YandexDriving implements MethodCallHandler {
 
     DrivingSession session = drivingRouter.requestRoutes(
       points,
-      new DrivingOptions(null, 1, null, null, null);
+      new DrivingOptions(null, 1, null, null, null),
       new VehicleOptions(),
       new YandexDrivingListener(result)
     );
